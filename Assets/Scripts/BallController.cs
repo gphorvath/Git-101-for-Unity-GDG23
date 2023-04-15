@@ -16,12 +16,6 @@ public class BallController : MonoBehaviour
         Invoke("GoBall", 2);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     void GoBall()
     {
         float rand = Random.Range(0, 2);
