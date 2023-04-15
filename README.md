@@ -24,4 +24,4 @@ Added these lines to the `.gitignore`:
 /[Cc]odeCoverage/
 ```
 
-Disabled compression under `Player Settings -> Publishing Settings`.  This substantially improved build times (`40mins -> 5mins`).
+Disabled compression under `Player Settings -> WebGL -> Publishing Settings`.  This substantially improved build times (`40mins -> 5mins`).
