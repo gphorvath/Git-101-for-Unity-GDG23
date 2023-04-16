@@ -154,4 +154,5 @@ MonoBehaviour:
   moveUp: 119
   moveDown: 115
   speed: 10
-  boundY: 2.25
+  topY: 1.75
+  bottomY: -2.75

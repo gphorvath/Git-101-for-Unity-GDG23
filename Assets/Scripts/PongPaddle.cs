@@ -12,19 +12,20 @@ public class PongPaddle : MonoBehaviour
     public KeyCode moveUp = KeyCode.W;
     public KeyCode moveDown = KeyCode.S;
     public float speed = 10.0f;
-    public float boundY = 2.25f;
-    private Rigidbody2D rb2d;
+    public float topY = 2.25f;
+    public float bottomY = -2.25f;
+    private Rigidbody2D _rb2d;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>();
+        _rb2d = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        var vel = rb2d.velocity;
+        var vel = _rb2d.velocity;
         if (Input.GetKey(moveUp))
         {
             vel.y = speed;
@@ -37,16 +38,16 @@ public class PongPaddle : MonoBehaviour
         {
             vel.y = 0;
         }
-        rb2d.velocity = vel;
+        _rb2d.velocity = vel;
 
         var pos = transform.position;
-        if (pos.y > boundY)
+        if (pos.y > topY)
         {
-            pos.y = boundY;
+            pos.y = topY;
         }
-        else if (pos.y < -boundY)
+        else if (pos.y < bottomY)
         {
-            pos.y = -boundY;
+            pos.y = bottomY;
         }
         transform.position = pos;
     }
