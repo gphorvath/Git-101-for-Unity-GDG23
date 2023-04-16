@@ -61,6 +61,12 @@ fi
 unset env
 ```
 
+If you ever update your key just run this:
+
+``` sh
+ssh-add ~/.ssh/id_ed25519
+```
+
 ## GameCI
 
 ### Environment Variables
