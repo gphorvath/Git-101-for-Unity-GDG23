@@ -5,6 +5,7 @@ using UnityEngine;
 
 // Borrowed code from here: https://www.awesomeinc.org/tutorials/unity-pong/
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class PongPaddle : MonoBehaviour
 {
 
