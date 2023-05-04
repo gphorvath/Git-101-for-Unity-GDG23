@@ -1,4 +1,6 @@
-# GameDevGuildConference2023
+# Git 101 for Unity (GameDevGuild 2023)
+
+The repo and projects from this talk at GameDevGuild Conference 2023.
 
 ## Git Setup
 
